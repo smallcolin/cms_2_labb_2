@@ -9,13 +9,143 @@ body {
 }
 
 a {
-  #ffffff
+  color: #ffffff;
 }
 
 /* Header Style */
 
 .navbar {
   background-color: #22C4FD;
+  height: 80px;
+}
+  .navbar a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+@media screen and (min-width: 1008px) {
+  a.navbar-item.is-active {
+    color: white;
+  }
+}
+
+/* Hero Style */
+
+.hero {
+  height: 500px;
+}
+  .hero img {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+
+.hero-text {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.hero-text .title,
+.hero-text .subtitle {
+  color: white;
+}
+
+.hero-text .title {
+  font-size: 44px;
+}
+
+/* Text Style */
+
+.paragraph-text {
+  margin: 40px 0;
+}
+
+/* Testimonial Style */
+
+.paragraph-testimonial {
+  position: relative;
+  background-color: rgba(9,189,253, 0.2);
+  padding: 70px 50px;
+}
+  .paragraph-testimonial .testimonial-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .paragraph-testimonial .testimonial-btn {
+    position: absolute;
+    font-weight: bold;
+    transform: translateY(-50%);
+    top: 50%;
+    text-transform: uppercase;
+    background-color: #22C4FD;
+    height: 70px;
+    padding: 20px;
+  }
+
+/* Puffar Style */
+
+.paragraph-puffer {
+  margin-bottom: 100px;
+}
+
+.image-box {
+  position: relative;
+  padding-top: 4px;
+  height: 320px;
+}
+  .image-box .image img {
+    height: 100%;
+  }
+
+.image-box.pad-right {
+  padding-right: 2px;
+}
+.pad-left {
+  padding-left: 2px;
+}
+.pad-center {
+  padding: 0 2px;
+}
+
+.puff-text {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  color: white;
+}
+
+/* Testimonial-footer */
+
+.paragraph-testimonial-footer {
+  background-color: #22C4FD;
+  padding: 40px;
+  margin-bottom: -24px;
+}
+
+.paragraph-testimonial-footer .test-footer-text {
+  color: white;
+}
+
+.paragraph-testimonial-footer .test-footer-menu {
+  float: right;
+  color: white;
+}
+
+/* Footer Style */
+
+.footer {
+  background-color: #1DB0E3;
 }
 
 /* Image Styles */
