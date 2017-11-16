@@ -61,7 +61,9 @@
     <div class="navbar-brand">
       {% if page.navbar_branding %}
       <div class="navbar-item">
-      {{ page.navbar_branding }}
+        <a href="/">
+          <img src="{{ base_path ~ directory }}/assets/images/kodamera-logo-white.png" alt="Kodamera" />
+        </a>
       </div>
       {% endif %}
       <div id="js-navbar-burger" class="navbar-burger burger" data-target="navbar-menu">
@@ -108,7 +110,8 @@
 {% if page.footer %}
   <footer role="contentinfo" class="footer">
     <div class="container">
-      {{ page.footer }}
+      <img style="position: absolute;" src="{{ base_path ~ directory }}/assets/images/kodamera-logo-white.png" alt="Kodamera" />
+      </div>
     </div>
   </footer>
 {% endif %}
