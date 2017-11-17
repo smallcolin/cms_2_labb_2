@@ -62,7 +62,7 @@ a {
 /* Text Style */
 
 .paragraph-text {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 /* Testimonial Style */
@@ -90,8 +90,9 @@ a {
 
 /* Puffar Style */
 
-.paragraph-puffer {
-  margin-bottom: 100px;
+.paragraph-puffar {
+  height: 400px;
+  margin-bottom: 60px;
 }
 
 .image-box {
@@ -102,6 +103,15 @@ a {
     position: relative;
     height: 100%;
   }
+    .image-box.gap-right {
+      margin-right: 2px;
+    }
+    .image-box.gap-center {
+      margin: 0 2px;
+    }
+    .image-box.gap-left {
+      margin-left: 2px;
+    }
 
 .darkness {
   display: block;
