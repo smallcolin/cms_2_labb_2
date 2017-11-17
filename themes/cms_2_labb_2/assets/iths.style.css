@@ -12,6 +12,12 @@ a {
   color: #ffffff;
 }
 
+.page-title {
+  text-align: center;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
 /* Header Style */
 
 .navbar {
@@ -29,6 +35,10 @@ a {
     color: white;
   }
 }
+
+<------------------------------------------------>
+<----------  Landing Page  ---------------------->
+<------------------------------------------------>
 
 /* Hero Style */
 
@@ -95,21 +105,28 @@ a {
   margin-bottom: 60px;
 }
 
-.image-box {
-  padding-top: 4px;
-  height: 320px;
+.image-box-1,
+.image-box-2,
+.image-box-3 {
+  display: block;
+  position: relative;
+  height: 100%;
+  text-align: center;
 }
-  .image-box .image img {
-    position: relative;
-    height: 100%;
+  .image-box-1 .image img,
+  .image-box-2 .image img,
+  .image-box-3 .image img {
+    display: block;
+    padding-top: 4px;
+    height: 100%;  <!-- put 300px flex doesn't work properly -->
   }
-    .image-box.gap-right {
+    .image-box-1.gap-right {
       margin-right: 2px;
     }
-    .image-box.gap-center {
+    .image-box-2.gap-center {
       margin: 0 2px;
     }
-    .image-box.gap-left {
+    .image-box-3.gap-left {
       margin-left: 2px;
     }
 
@@ -123,24 +140,27 @@ a {
   height: 320px;
 }
 
-.puff-text {
+.puff-text-1,
+.puff-text-2,
+.puff-text-3 {
   position: absolute;
   text-transform: uppercase;
+  font-size: 18px;
   font-weight: bold;
   transform: translateY(-50%);
   top: 50%;
-  /*right: 0;
-  left: 0;*/
-  /*bottom: 50%;*/
-  color: red;
+  right: 0;
+  left: 0;
+  color: white;
 }
 
 /* Testimonial-footer */
 
 .paragraph-testimonial-footer {
   background-color: #22C4FD;
-  padding: 40px;
+  height: 180px;
   margin-bottom: -24px;
+  padding: 40px;
 }
 
 .paragraph-testimonial-footer .test-footer-text {
@@ -158,8 +178,22 @@ a {
   background-color: #1DB0E3;
   padding: 2rem 1.5rem 4rem;
 }
-  .footer img {
-    height: 30px;
-  }
+.footer img {
+  height: 30px;
+}
+
+<------------------------------------------------>
+<----------  About Us Page  --------------------->
+<------------------------------------------------>
+
+
+
+
+
+
+<------------------------------------------------>
+<----------  Contact Page  ---------------------->
+<------------------------------------------------>
+
 
 /* Image Styles */
