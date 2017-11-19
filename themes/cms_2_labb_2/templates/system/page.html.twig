@@ -86,19 +86,6 @@
 </nav>
 {% endif %}
 {% endblock navbar %}
-{% block header %}
-
-{% endblock header %}
-{% block secondary_menu %}
-{# Secondary menu #}
-{% if page.secondary_menu %}
-<nav class="nav has-shadow">
-  <div class="container">
-    {{ page.secondary_menu }}
-  </div>
-</nav>
-{% endif %}
-{% endblock secondary_menu %}
 
 {% block main %}
   {% block main_content %}
