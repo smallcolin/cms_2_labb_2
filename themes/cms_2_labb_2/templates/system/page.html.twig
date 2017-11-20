@@ -54,18 +54,16 @@
  */
 #}
 {% block navbar %}
-{% if page.navbar_branding or page.navbar_social or page.primary_menu %}
+{% if page.navbar_social or page.primary_menu %}
 {# Top navbar #}
 <nav class="navbar has-shadow">
   <div class="container">
     <div class="navbar-brand">
-      {% if page.navbar_branding %}
       <div class="navbar-item">
         <a href="/">
           <img src="{{ directory }}/assets/images/kodamera-logo-white.png" alt="Kodamera" />
         </a>
       </div>
-      {% endif %}
       <div id="js-navbar-burger" class="navbar-burger burger" data-target="navbar-menu">
         <span></span>
         <span></span>
@@ -73,11 +71,6 @@
       </div>
     </div>
     <div id="js-navbar-menu" class="navbar-menu">
-      {% if page.navbar_social %}
-      <div class="navbar-start">
-      {{ page.navbar_social }}
-      </div>
-      {% endif %}
       {% if page.primary_menu %}
       {{ page.primary_menu }}
       {% endif %}
@@ -93,13 +86,15 @@
   {% endblock main_content %}
 {% endblock main %}
 
-{% block footer %}
-{% if page.footer %}
-  <footer role="contentinfo" class="footer">
-    <div class="container">
-      <img style="position: absolute;" src="{{ base_path ~ directory }}/assets/images/kodamera-logo-white.png" alt="Kodamera" />
-      </div>
+{% block footer_bottom %}
+  {% if page.footer_bottom %}
+    {{ page.footer_bottom }}
+  {% endif %}
+{% endblock footer_bottom %}
+
+<footer role="contentinfo" class="footer">
+  <div class="container">
+    <img style="position: absolute;" src="{{ base_path ~ directory }}/assets/images/kodamera-logo-white.png" alt="Kodamera" />
     </div>
-  </footer>
-{% endif %}
-{% endblock footer %}
+  </div>
+</footer>
