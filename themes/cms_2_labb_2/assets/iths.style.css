@@ -193,10 +193,12 @@ a {
 /*------------------------------------------*/
 
 .paragraph-about-us {
+  background-color: rgba(9,189,253, 0.2);
   margin-bottom: 80px;
 }
-  .paragraph-about-us .about-us-text {
-    padding-right: 60px;
+  .paragraph-about-us .about-us-text,
+  .paragraph-about-us .about-us-image {
+    padding: 2em 3em;
   }
 
 /*------------------------------------------*/
