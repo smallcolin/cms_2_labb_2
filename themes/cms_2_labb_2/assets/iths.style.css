@@ -205,5 +205,14 @@ a {
 /*----------- Contact Page   ---------------*/
 /*------------------------------------------*/
 
+.paragraph-contact {
+  background-color: rgba(9,189,253, 0.2);
+  margin-bottom: 80px;
+}
+  .paragraph-contact .contact-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2em 3em;
+  }
 
 /* Image Styles */
