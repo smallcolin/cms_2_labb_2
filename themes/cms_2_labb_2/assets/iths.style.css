@@ -190,6 +190,32 @@ a {
   height: 30px;
 }
 
+/* Footer Bottom */
+
+.footer-bottom {
+  background-color: #22C4FD;
+  height: 180px;
+  padding: 40px;
+}
+  .footer-bottom #navbar-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+    .footer-bottom #navbar-menu a {
+      color: white;
+    }
+      .footer-bottom a.navbar-item:last-of-type {
+        padding-right: 0;
+      }
+
+.footer-menu-text {
+  color: white;
+}
+
+
 /*------------------------------------------*/
 /*----------- About Us Page   --------------*/
 /*------------------------------------------*/
