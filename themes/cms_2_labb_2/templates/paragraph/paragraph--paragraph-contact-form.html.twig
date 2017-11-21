@@ -2,8 +2,42 @@
   <div class="columns">
     <div class="column is-half is-offset-one-quarter">
       <div class="paragraph-contact">
-        <div class="contact-text">
-          {{ content.field_paragraph_contact_message }}
+        <h2>{{ content.field_paragraph_contact_message }}</h2>
+        <h2>{{ content.field_paragraph_contact_name }}</h2>
+        <h2>{{ content.field_paragraph_contact_email }}</h2>
+        <h2>{{ content.field_paragraph_contact_msg }}</h2>
+        <h2>{{ content.field_paragraph_contact_button }}</h2>
+        <div class="contact-form">
+          <form action="" method="post">
+            <div class="field">
+              <label class="label">Namn</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Epost</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Meddelande</label>
+              <div class="control">
+                <textarea class="textarea" name="message" placeholder=""></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-text">
+                  Skicka
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

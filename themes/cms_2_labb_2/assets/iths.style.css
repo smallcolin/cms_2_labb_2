@@ -218,11 +218,22 @@ a {
 .paragraph-contact {
   background-color: rgba(9,189,253, 0.2);
   margin-bottom: 80px;
+  padding: 2em 3em;
 }
-  .paragraph-contact .contact-text {
-    font-size: 18px;
+  .paragraph-contact h2 {
     font-weight: bold;
-    padding: 2em 3em;
+    margin-bottom: 20px;
   }
-
+    .paragraph-contact .contact-form {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+      .paragraph-contact .contact-form .is-grouped .control {
+        margin: 0 auto;
+      }
+        .paragraph-contact .button {
+          background-color: #22C4FD;
+          color: white;
+        }
 /* Image Styles */
