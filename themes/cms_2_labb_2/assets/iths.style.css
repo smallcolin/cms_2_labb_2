@@ -162,24 +162,6 @@ a {
   z-index: 99;
 }
 
-/* Testimonial-footer */
-
-.paragraph-testimonial-footer {
-  background-color: #22C4FD;
-  height: 180px;
-  margin-bottom: -24px;
-  padding: 40px;
-}
-
-.paragraph-testimonial-footer .test-footer-text {
-  color: white;
-}
-
-.paragraph-testimonial-footer .test-footer-menu {
-  float: right;
-  color: white;
-}
-
 /* Footer Style */
 
 .footer {
