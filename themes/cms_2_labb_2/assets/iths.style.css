@@ -19,6 +19,10 @@ a {
   margin: 40px 0;
 }
 
+.search-form {
+  margin: 2em 4em;
+}
+
 /* Header Style */
 
 .navbar {
