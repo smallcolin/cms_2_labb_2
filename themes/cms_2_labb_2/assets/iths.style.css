@@ -23,6 +23,14 @@ a {
   margin: 2em 4em;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* Header Style */
 
 .navbar {
