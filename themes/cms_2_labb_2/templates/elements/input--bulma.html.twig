@@ -12,10 +12,17 @@
  * @ingroup themeable
  */
 #}
-{% set classes = bulma_button_classes %}
+  {%
+  set classes = [
+  'input'
+  ]
+  %}
 
-<div class="control">
-  <button class="icon-search-button">
-    <img src="{{ base_path ~ directory }}/assets/images/icon-search.png" alt="Kodamera" />
-  </button>{{ children }}
+<div class="control{{ icon ? ' has-icons-left' }}">
+    {{ children }}
+    {% if icon %}
+        <span class="icon is-left">
+            <i class="fa fa-{{ icon }}"></i>
+        </span>
+    {% endif %}
 </div>
