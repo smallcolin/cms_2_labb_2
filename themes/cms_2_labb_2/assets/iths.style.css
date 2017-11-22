@@ -35,6 +35,12 @@ a {
   margin: 1.5em;
 }
 
+.icon-search-button {
+  background-color: transparent;
+  border: 0;
+  width: 36px;
+}
+
 @media screen and (min-width: 1008px) {
   a.navbar-item.is-active {
     color: white;
@@ -50,12 +56,22 @@ a {
 
 .hero {
   height: 500px;
+  position: relative;
 }
-  .hero img {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
+  .hero .darkness-hero {
+    display: block;
+    position: absolute;
+    background-color: #333333;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
   }
+    .hero img {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
 
 .hero-text {
   position: absolute;
@@ -64,6 +80,7 @@ a {
   right: 0;
   transform: translateY(-50%);
   top: 50%;
+  z-index: 99;
 }
 
 .hero-text .title,
